@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+Hello
+	<script>
+	function pow(base, exponent) {
+		if (exponent>=0){var result = 1;
+		for (var count= 0; count < exponent; count++){
+		result*=base;}
+		return result;
+		}else{
+		var result = 1;
+		exponent = exponent*(-1);
+		for (var count = 0; count < exponent; count++){			
+		result*=base;}
+		return 1/result;
+		}
+		}
+		var base = prompt("Введите число", "");
+		var exponent = prompt("Введите степень", "");
+		console.log(pow(base, exponent));
+	</script>
+</body>
+</html>
